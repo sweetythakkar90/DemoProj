@@ -220,7 +220,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\index.cshtml" />
+    <Content Include="Views\Company\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.cshtml" />
