@@ -20,7 +20,7 @@ namespace DemoProjServiceAPI.Models
 
             SqlCommand sqlCmd = new SqlCommand();
             sqlCmd.CommandType = CommandType.Text;
-            sqlCmd.CommandText = "Select companyID,companyName,email,phoneNumber from tblCompany where companyID =1";
+            sqlCmd.CommandText = "Select companyID,companyName,email,phoneNumber from tblCompany";
             sqlCmd.Connection = myConnection;
             reader = sqlCmd.ExecuteReader();
             List<Company> lst = null;

@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using DemoProjServiceAPI.Models;
+﻿using DemoProjServiceAPI.Models;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace DemoProjServiceAPI.Controllers
 {
@@ -12,7 +9,7 @@ namespace DemoProjServiceAPI.Controllers
     [EnableCors("MyPolicy")]
     public class CompanyController : Controller
     {
-        // GET: api/company
+        // GET: api/company/
         [HttpGet]
         [EnableCors("MyPolicy")]
         public IEnumerable<Company> GetCompanies()
