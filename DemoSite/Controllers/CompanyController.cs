@@ -12,7 +12,7 @@ namespace DemoSite.Controllers
     public class CompanyController : Controller
     {
         //Hosted web API REST Service base url 
-        string Baseurl = "http://localhost:13626/";
+        string Baseurl = "http://localhost:57782/";
         public async Task<ActionResult> Index()
         {
             List < CompanyModel> CompanyInfo = new List<CompanyModel>();
@@ -27,7 +27,7 @@ namespace DemoSite.Controllers
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
                 //Sending request to find web api REST service resource GetAllComapnies using HttpClient 
-                HttpResponseMessage Res = await client.GetAsync("api/company/getcompanies");
+                HttpResponseMessage Res = await client.GetAsync("api/company");
 
                 //Checking the response is successful or not which is sent using HttpClient
                 if (Res.IsSuccessStatusCode)
